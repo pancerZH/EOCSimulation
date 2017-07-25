@@ -23,3 +23,19 @@
 
 - matplotlib(2.0.0)
 - numpy(1.11.3)
+
+## 模拟结果展示
+
+- 生物比较集中的结果		
+
+	 - 开局    
+	 ![image](https://github.com/pancerZH/EOCSimulation/blob/master/image/start1.png)
+	 - 结束  
+	 ![image](https://github.com/pancerZH/EOCSimulation/blob/master/image/end1.png)
+	 
+- 生物比较分散的结果
+
+	- 开局  
+	![image](https://github.com/pancerZH/EOCSimulation/blob/master/image/start2.png)
+	- 结束  
+	![image](https://github.com/pancerZH/EOCSimulation/blob/master/image/end2.png)
