@@ -112,6 +112,11 @@ def data_gen():
                         grid[growth[0]][growth[1]] = 10  # 草生长
 
         fieldUpdate()
+        '''
+        if (count+1) % 100 == 0:
+            plt.savefig("end.png")
+            yield grid
+        '''
         yield grid
 
 
@@ -136,7 +141,7 @@ cbar = plt.colorbar(gci)  # 显示colorbar
 cbar.set_ticks(np.linspace(0, 3, 4))
 cbar.set_ticklabels(('Space', 'Grass', 'GrassEater', 'MeatEater'))
 timesText = plt.text(-2, -2, 'times: 0')  # 左上角显示迭代次数
-
+# plt.savefig("start.png")
 ani = animation.FuncAnimation(fig, update, data_gen, interval=1000, repeat=False)
 
 plt.show()
